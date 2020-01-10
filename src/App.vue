@@ -8,12 +8,6 @@
 
 export default {
   name: 'app',
-  data() {
-    return {
-      counter: 0,
-      search: '',
-    }
-  },
     computed: {
       filteredMovie() {
           return this.movies.filter(post => {

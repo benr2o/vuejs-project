@@ -18,13 +18,19 @@
 
 
 <script>
+import MovieItem from './MovieItem.vue'
+
 export default {
     data() {
         return {
-            movies: window.shared_data.movies 
-            }
+            movies: window.shared_data.movies,
+            search: '',
+        }
     },
     props: ['m', 'i'],
+    components: {
+        MovieItem
+    },
     methods: {
         showMovie(i) {
             this.$emit('show-movie', i);
