@@ -16,7 +16,7 @@
         <div class="d-flex justify-content-end"> 
             <router-link :to="'/details/' + m.id" tag="button" class="btn btn-success m-1">Détails</router-link>
             <button type="button" class="btn btn-danger m-1" v-on:click="deleteMovie(i)">Supprimer</button>
-            <button type="button" class="btn btn-warning m-1" v-on:click="editMovie(i)">Editer</button> 
+            <router-link :to="'/edit/' + m.id" tag="button" class="btn btn-warning m-1">Éditer</router-link>
         </div> 
         <hr> 
     </li>
