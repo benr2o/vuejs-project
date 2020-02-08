@@ -29,7 +29,7 @@ window.shared_data = {
       date: "2012-04-25",
       time: "2h 23min",
       langue: "Américain",
-      dire: { name: "Joss Whedon", live: "New York", born: "23 juin 1964" },
+      dire: { name: "Joss Whedon", live: "New York", born: "1964-06-23" },
       style: "Sci-Fi / Fantasy",
       desc:
         "Lorsque Nick Fury, le directeur du S.H.I.E.L.D., l'organisation qui préserve la paix au plan mondial, cherche à former une équipe de choc pour empêcher la destruction du monde, Iron Man, Hulk, Thor, Captain America, Hawkeye et Black Widow répondent présents. Les Avengers ont beau constituer la plus fantastique des équipes, il leur reste encore à apprendre à travailler ensemble, et non les uns contre les autres, d'autant que le redoutable Loki a réussi à accéder au Cube Cosmique et à son pouvoir illimité...",
@@ -44,7 +44,7 @@ window.shared_data = {
       date: "2001-05-12",
       langue: "Anglais",
       time: "2h 32min",
-      dire: {name: "Chris Columbus", live: "Spangler", born: "10 septembre 1958"},
+      dire: {name: "Chris Columbus", live: "Spangler", born: "1958-10-07"},
       style: "Fantasy",
       desc:
         "Orphelin, le jeune Harry Potter peut enfin quitter ses tyranniques oncle et tante Dursley lorsqu'un curieux messager lui révèle qu'il est un sorcier.",
