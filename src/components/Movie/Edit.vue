@@ -9,15 +9,24 @@
                     </div>
                     <div class="form-group">
                         <label for="date">Date</label>
-                        <input type="text" v-model="movie.date" class="form-control" id="date" aria-describedby="date" placeholder="1 janvier 2020">
-                    </div>
-                    <div class="form-group">
-                        <label for="director">Director</label>
-                        <input type="text" v-model="movie.dire" class="form-control" id="director" aria-describedby="director" placeholder="Director">
+                        <input type="date" v-model="movie.date" class="form-control" id="date" aria-describedby="date" placeholder="1 janvier 2020">
                     </div>
                     <div class="form-group">
                         <label for="description">Description</label>
                         <textarea v-model="movie.desc" class="form-control" id="description" rows="3"></textarea>
+                    </div>
+                    <h1>Director</h1>
+                    <div class="ml-5 form-group">
+                        <label for="director">Director name</label>
+                        <input type="text" v-model="movie.dire.name" class="form-control" id="director" aria-describedby="director" placeholder="Director">
+                    </div>
+                    <div class="ml-5 form-group">
+                        <label for="director">Director live</label>
+                        <input type="text" v-model="movie.dire.live" class="form-control" id="director" aria-describedby="director" placeholder="Director">
+                    </div>
+                    <div class="ml-5 form-group">
+                        <label for="director">Director born</label>
+                        <input type="text" v-model="movie.dire.born" class="form-control" id="director" aria-describedby="director" placeholder="Director">
                     </div>
                     <router-link :to="'/details/' + movie.id" class="btn btn-primary">Submit</router-link>
                 </fieldset>

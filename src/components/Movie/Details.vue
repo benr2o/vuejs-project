@@ -4,11 +4,12 @@
             <img class="cover" :src="movie.img"/>
         </div>
         <div class="container">
-            <div class="row justify-content-center">
-                <h1 class="display-1 text-uppercase">{{movie.title}}</h1>
+            <div class="row justify-content-center align-items-center">
+                <h1 class="display-1 text-uppercase col-12 text-center">{{movie.title}}</h1>
+                <p>{{movie.style}} - <strong>{{movie.langue}}</strong></p>
             </div>
-            <p>{{movie.date}} / {{movie.time}} </p>
-            <p>De <strong>{{movie.dire}}</strong></p>
+            <p>{{movie.date}} / {{movie.time}}</p>
+            <p>De <strong>{{movie.dire.name}} - {{movie.dire.live}} - {{movie.dire.born}}</strong></p>
             <h2>SYNOPSIS:</h2>
             <p>{{movie.desc}}</p>
             <div class="row col">
@@ -17,6 +18,12 @@
                     <router-link :to="'/edit/' + movie.id" class="btn btn-warning">Éditer</router-link>
                 </div>
             </div>
+            <hr>
+            <fieldset class="form-group col-3">
+                <legend>Vote</legend>
+                <label for="customRange1">Note : {{movie.vote}}/5</label>
+                <input type="range"  min="0" max="5" v-model="movie.vote" class="custom-range" id="customRange1">
+            </fieldset>
         </div>
     </div>
 </template>

@@ -10,7 +10,7 @@
                     aria-describedby="inputGroup-sizing-default" v-model="search">
             </div>
             <ul>
-                <div class="row">
+                <div class="row justify-content-center">
                     <MovieItem v-for="(m,i) of filteredMovie" v-bind:key="m.title" v-bind:m="m" v-bind:i="i" v-on:delete-movie="deleteMovie(i)"
                         v-on:show-movie="showMovie(i)" v-on:edit-movie="editMovie(i)">
                     </MovieItem>
@@ -44,8 +44,8 @@ export default {
       filteredMovie() {
           return this.movies.filter(post => {
               return post.title.toLowerCase().includes(this.search.toLowerCase())
-                      || post.dire.toLowerCase().includes(this.search.toLowerCase())
-                      || post.date.toString().includes(this.search.toLowerCase())
+                    || post.dire.name.toLowerCase().includes(this.search.toLowerCase())
+                    || post.date.toString().includes(this.search.toLowerCase())
           })
       }
     },

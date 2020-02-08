@@ -10,9 +10,6 @@
           <li class="nav-item">
               <router-link :to="'/movies'" tag="a" class="nav-item nav-link">Movies</router-link>
           </li>
-          <li class="nav-item">
-              <router-link :to="'/movies'" tag="a" class="nav-item nav-link">Director</router-link>
-          </li>
         </ul>
       </div>
     </nav>
