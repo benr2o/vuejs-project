@@ -9,6 +9,9 @@
                 <router-link :to="'/details/' + m.id" class="btn btn-primary mr-1">Details</router-link>
                 <button type="button" class="btn btn-danger" v-on:click="deleteMovie(i)">Supprimer</button> 
             </div>
+            <div class="card-footer pb-0">
+                <p>Vote: {{m.vote}}/5</p>
+            </div>
         </div>
     </li>
 </template>    

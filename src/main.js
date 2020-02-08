@@ -36,7 +36,7 @@ window.shared_data = {
       img:
         "https://occ-0-590-586.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABd1ZQ7VuC9clk91edoXjp8YiMob36S1TrzKeJD0fgvJILpOxWpymgR8HVxsgykDmfDg0iJeiNhyPZxveWHuFSejWeLUy.jpg?r=796",
       trailer: "https://www.youtube.com/watch?v=b-kTeJhHOhc",
-      vote: 0
+      vote: 1
     },
     {
       id: 1,
@@ -51,7 +51,7 @@ window.shared_data = {
       img:
         "https://images.justwatch.com/backdrop/52992074/s1440/harry-potter-a-lecole-des-sorciers",
       trailer: "https://www.youtube.com/watch?v=ht5T2thYQFk",
-      vote: 0
+      vote: 1
     }
   ]
 };

@@ -22,7 +22,7 @@
             <fieldset class="form-group col-3">
                 <legend>Vote</legend>
                 <label for="customRange1">Note : {{movie.vote}}/5</label>
-                <input type="range"  min="0" max="5" v-model="movie.vote" class="custom-range" id="customRange1">
+                <input type="range"  min="1" max="5" v-model="movie.vote" class="custom-range" id="customRange1">
             </fieldset>
         </div>
     </div>
