@@ -32,18 +32,13 @@
                         <textarea v-model="movie.desc" class="form-control" id="description" rows="3"></textarea>
                     </div>
                     <h1>Director</h1>
-                    <div class="ml-5 form-group">
+                    <div class="mb-5 ml-5 form-group">
                         <label for="director">Director name</label>
-                        <input type="text" v-model="movie.dire.name" class="form-control" id="director" aria-describedby="director" placeholder="Director">
+                        <select class="form-control" id="exampleSelect1" v-model="movie.director_id">
+                            <option v-for="d in directors_list" v-bind:key="d.id" v-bind:value="d.id" >{{d.name}}</option>
+                        </select>
                     </div>
-                    <div class="ml-5 form-group">
-                        <label for="director">Director live</label>
-                        <input type="text" v-model="movie.dire.live" class="form-control" id="director" aria-describedby="director" placeholder="Director">
-                    </div>
-                    <div class="ml-5 form-group">
-                        <label for="director">Director born</label>
-                        <input type="date" v-model="movie.dire.born" class="form-control" id="director" aria-describedby="director" placeholder="Director">
-                    </div>
+                    <hr>
                     <router-link :to="'/details/' + movie.id" class="btn btn-primary">Submit</router-link>
                 </fieldset>
             </form>
@@ -56,12 +51,16 @@
         data() {
             return {
                 movies: window.shared_data.movies,
+                directors: window.shared_data.directors,
             }
         },
         computed: {
             movie() {
                 return this.movies[this.$route.params.id];
-            }
+            },
+            directors_list() {
+                return this.directors;
+            },
         },
     }
 </script>

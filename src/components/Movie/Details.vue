@@ -9,7 +9,7 @@
                 <p>{{movie.style}} - <strong>{{movie.langue}}</strong></p>
             </div>
             <p>{{movie.date}} / {{movie.time}}</p>
-            <p>De <strong>{{movie.dire.name}} - {{movie.dire.live}} - {{movie.dire.born}}</strong></p>
+            <p>De <strong>{{director.name}} - {{director.live}} - {{director.born}}</strong></p>
             <h2>SYNOPSIS:</h2>
             <p>{{movie.desc}}</p>
             <div class="row col">
@@ -33,6 +33,7 @@
         data() {
             return {
                 movies: window.shared_data.movies,
+                directors: window.shared_data.directors
             }
         },
         methods: {
@@ -43,6 +44,9 @@
         computed: {
             movie() {
                 return this.movies[this.$route.params.id];
+            },
+            director() {
+                return this.directors[this.movie.director_id];
             }
         },
     }

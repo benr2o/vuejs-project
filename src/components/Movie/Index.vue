@@ -28,6 +28,7 @@ export default {
     data() {
         return {
             movies: window.shared_data.movies,
+            directors: window.shared_data.directors,
             search: '',
         }
     },
@@ -44,7 +45,7 @@ export default {
       filteredMovie() {
           return this.movies.filter(post => {
               return post.title.toLowerCase().includes(this.search.toLowerCase())
-                    || post.dire.name.toLowerCase().includes(this.search.toLowerCase())
+                    || this.directors[post.director_id].name.toLowerCase().includes(this.search.toLowerCase())
                     || post.date.toString().includes(this.search.toLowerCase())
           })
       }
